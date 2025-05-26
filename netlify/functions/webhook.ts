@@ -3,7 +3,7 @@ import Stripe from 'stripe';
 import { updateOrderStatus, getOrder } from '../../src/utils/supabaseClient';
 
 // Initialize Stripe with your secret key
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_51RSyR94GNfFRtlKHQXX0I0Pyawi6m5QdHRUBKmIU8rxap90CHVRl7vwrhSMifAWj3EsQpLrrQlr7OluA2lMtceEu00rj8lSBTY', {
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
   apiVersion: '2023-10-16',
 });
 
