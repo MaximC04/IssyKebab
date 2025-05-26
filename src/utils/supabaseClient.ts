@@ -1,8 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
 
 // Get the Supabase URL and anonymous key from environment variables
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://xvdhckikpxsxvhhbxzhq.supabase.co';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh2ZGhja2lrcHhzeHZoaGJ4emhxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgyNTQ4MTksImV4cCI6MjA2MzgzMDgxOX0.MFg__CtabfPDXOx_c8lj_NoKaZLQh3k0tgnFjmh2x3A';
 
 // Check if the required environment variables are set
 if (!supabaseUrl || !supabaseAnonKey) {
